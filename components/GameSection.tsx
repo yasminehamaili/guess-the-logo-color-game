@@ -28,18 +28,23 @@ const GameSection: React.FC<GameSectionProps> = ({ question, onAnswer, onNext, q
 
   const handleSelect = (option: string) => {
     if (isRevealed) return;
-    setSelectedColors((prev) =>
-      prev.includes(option)
-        ? prev.filter((c) => c !== option)
-        : [...prev, option]
-    );
+
+    if (question.correctColors.length === 1) {
+      setSelectedColors([option]);
+    } else {
+      setSelectedColors((prev) =>
+        prev.includes(option)
+          ? prev.filter((c) => c !== option)
+          : [...prev, option]
+      );
+    }
   };
 
   const handleSubmit = () => {
     if (isRevealed || selectedColors.length === 0) return;
 
     const sortedSelected = [...selectedColors].sort();
-    const sortedCorrect = [...question.correctColor].sort();
+    const sortedCorrect = [...question.correctColors].sort();
 
     const isAnswerCorrect =
       sortedSelected.length === sortedCorrect.length &&
@@ -68,7 +73,7 @@ const GameSection: React.FC<GameSectionProps> = ({ question, onAnswer, onNext, q
   
   const getButtonClass = (option: string) => {
     const isSelected = selectedColors.includes(option);
-    const isCorrect = question.correctColor.includes(option);
+    const isCorrect = question.correctColors.includes(option);
     
     let classes = 'h-24 md:h-28 w-full rounded-2xl transition-all duration-300 ease-in-out transform flex items-center justify-center text-white text-4xl relative';
 
@@ -82,7 +87,9 @@ const GameSection: React.FC<GameSectionProps> = ({ question, onAnswer, onNext, q
       }
     } else {
       if (isSelected) {
-        classes += ' ring-4 ring-offset-2 ring-blue-500';
+        classes += ' ring-4 ring-offset-2 ring-indigo-500';
+      } else {
+        classes += ' hover:scale-105';
       }
     }
     
@@ -101,7 +108,7 @@ const GameSection: React.FC<GameSectionProps> = ({ question, onAnswer, onNext, q
             What color is the {question.name} logo?
           </h2>
           <p className="text-gray-500 mb-6 min-h-[2rem]">
-              {question.correctColor.length > 1 ? 'This logo has multiple colors. Select all of them!' : 'Select the correct color.'}
+              {question.correctColors.length > 1 ? 'This logo has multiple colors. Select all of them!' : 'Select the correct color.'}
           </p>
 
           <div className="relative w-48 h-48 mx-auto bg-gray-100 rounded-2xl flex items-center justify-center p-4 mb-8">
@@ -123,8 +130,8 @@ const GameSection: React.FC<GameSectionProps> = ({ question, onAnswer, onNext, q
                 className={getButtonClass(option)}
                 style={{ backgroundColor: option }}
               >
-                  {isRevealed && question.correctColor.includes(option) && '✓'}
-                  {isRevealed && selectedColors.includes(option) && !question.correctColor.includes(option) && '×'}
+                  {isRevealed && question.correctColors.includes(option) && '✓'}
+                  {isRevealed && selectedColors.includes(option) && !question.correctColors.includes(option) && '×'}
               </button>
             ))}
           </div>
@@ -137,14 +144,14 @@ const GameSection: React.FC<GameSectionProps> = ({ question, onAnswer, onNext, q
             )}
           </div>
           
-          <div className="mt-4">
+          <div className="mt-4 h-16 flex items-center justify-center">
               {isRevealed ? (
                   <button
                       data-cursor-interactive="true"
                       onClick={onNext}
-                      className="w-full sm:w-auto px-8 py-3 text-md font-medium text-white bg-gradient-to-r from-indigo-500 to-pink-500 rounded-xl hover:opacity-90 transition-all duration-300 ease-in-out"
+                      className="w-full sm:w-auto px-8 py-3 text-md font-medium text-white bg-gradient-to-r from-indigo-500 to-pink-500 rounded-xl hover:opacity-90 transition-all duration-300 ease-in-out animate-fade-in"
                   >
-                      Next Logo →
+                      {questionNumber === totalQuestions ? 'See Results' : 'Next Logo →'}
                   </button>
               ) : (
                   <button
