@@ -1,313 +1,298 @@
-
 import type { LogoData } from './types';
 
 export const LOGO_DATA: LogoData[] = [
   {
     id: 'spotify',
     name: 'Spotify',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png',
+    colorUrl: 'https://i.imgur.com/3pQ0b2B.png', // Direct PNG
     correctColors: ['#1DB954'],
-    options: ['#FFFC00', '#1DB954', '#1ED760', '#7289DA'],
+    options: ['#FFFC00', '#1DB954', '#000000', '#7289DA'],
   },
   {
     id: 'netflix',
     name: 'Netflix',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/1200px-Netflix_2015_N_logo.svg.png',
+    colorUrl: 'https://i.imgur.com/n14M1tT.png', // Direct PNG
     correctColors: ['#E50914'],
-    options: ['#E50914', '#FF0000', '#B20710', '#F5C518'],
+    options: ['#E50914', '#FF0000', '#000000', '#F5C518'],
   },
   {
     id: 'twitter-x',
     name: 'X (Twitter)',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/490px-X_logo_2023.svg.png',
+    colorUrl: 'https://i.imgur.com/rN9Q37F.png', // Direct PNG
     correctColors: ['#000000'],
-    options: ['#1DA1F2', '#36465D', '#000000', '#FFFFFF'],
+    options: ['#1DA1F2', '#36465D', '#000000', '#FF4500'],
   },
   {
     id: 'discord',
     name: 'Discord',
-    colorUrl: 'https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png',
+    colorUrl: 'https://i.imgur.com/152l0x3.png', // Direct PNG
     correctColors: ['#5865F2'],
     options: ['#5865F2', '#7289DA', '#23272A', '#FFFFFF'],
   },
   {
     id: 'youtube',
     name: 'YouTube',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png',
+    colorUrl: 'https://i.imgur.com/X4y322t.png', // Direct PNG
     correctColors: ['#FF0000'],
-    options: ['#4285F4', '#FF0000', '#000000', '#CC0000'],
-  },
-  {
-    id: 'google',
-    name: 'Google',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png',
-    correctColors: ['#4285F4', '#EA4335', '#FBBC05', '#34A853'],
-    options: ['#4285F4', '#EA4335', '#FBBC05', '#34A853', '#0F9D58', '#DB4437'],
-  },
-  {
-    id: 'microsoft',
-    name: 'Microsoft',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png',
-    correctColors: ['#F25022', '#7FBA00', '#00A4EF', '#FFB900'],
-    options: ['#F25022', '#7FBA00', '#00A4EF', '#FFB900', '#0078D4', '#D83B01'],
-  },
-  {
-    id: 'ebay',
-    name: 'eBay',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png',
-    correctColors: ['#E53238', '#0064D2', '#F5AF02', '#86B817'],
-    options: ['#E53238', '#0064D2', '#F5AF02', '#86B817', '#FF6600', '#00A4EF'],
-  },
-  {
-    id: 'slack',
-    name: 'Slack',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png',
-    correctColors: ['#4A154B', '#36C5F0', '#2EB67D', '#ECB22E'],
-    options: ['#4A154B', '#36C5F0', '#2EB67D', '#ECB22E', '#E01E5A', '#FFFFFF'],
-  },
-  {
-    id: 'nbc',
-    name: 'NBC',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/2048px-NBC_logo.svg.png',
-    correctColors: ['#FFC20E', '#FF5B00', '#E81123', '#9B2D8C', '#00A4EF', '#60BC46'],
-    options: ['#FFC20E', '#FF5B00', '#E81123', '#9B2D8C', '#00A4EF', '#60BC46'],
+    options: ['#4285F4', '#FF0000', '#000000', '#1ED760'],
   },
   {
     id: 'instagram',
     name: 'Instagram',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png',
-    correctColors: ['#E4405F'],
-    options: ['#E4405F', '#405DE6', '#F77737', '#833AB4'],
+    colorUrl: 'https://i.imgur.com/qL6iXgU.png', // Direct PNG
+    correctColors: ['#E4405F', '#F77737', '#833AB4'],
+    options: ['#E4405F', '#405DE4', '#F77737', '#833AB4'],
   },
   {
-    id: 'facebook',
-    name: 'Facebook',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png',
-    correctColors: ['#1877F2'],
-    options: ['#3B5998', '#1877F2', '#4267B2', '#898F9C'],
-  },
-  {
-    id: 'amazon',
-    name: 'Amazon',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png',
-    correctColors: ['#FF9900'],
-    options: ['#FF9900', '#232F3E', '#F0C14B', '#000000'],
-  },
-  {
-    id: 'apple',
-    name: 'Apple',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png',
-    correctColors: ['#A3AAAE'],
-    options: ['#000000', '#FFFFFF', '#A3AAAE', '#D1D1D6'],
-  },
-  {
-    id: 'adobe',
-    name: 'Adobe',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Adobe_Corporate_Logo.svg/1280px-Adobe_Corporate_Logo.svg.png',
-    correctColors: ['#FF0000'],
-    options: ['#ED1C24', '#FF0000', '#FF3333', '#CC0000'],
-  },
-  {
-    id: 'airbnb',
-    name: 'Airbnb',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png',
-    correctColors: ['#FF5A5F'],
-    options: ['#FF5A5F', '#00A699', '#FC642D', '#484848'],
-  },
-  {
-    id: 'mastercard',
-    name: 'Mastercard',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/2560px-Mastercard_2019_logo.svg.png',
-    correctColors: ['#EB001B', '#F79E1B'],
-    options: ['#EB001B', '#F79E1B', '#FF5F00', '#000000'],
+    id: 'google',
+    name: 'Google',
+    colorUrl: 'https://i.imgur.com/s64Vb9F.png', // Direct PNG
+    correctColors: ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'],
+    options: ['#DB4437', '#F4B400', '#0F9D58', '#4285F4'],
   },
   {
     id: 'mcdonalds',
     name: "McDonald's",
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2388px-McDonald%27s_Golden_Arches.svg.png',
+    colorUrl: 'https://i.imgur.com/tH3G03T.png', // Direct PNG
     correctColors: ['#FFC72C'],
     options: ['#DA291C', '#FFC72C', '#27251F', '#FFFFFF'],
   },
   {
-    id: 'starbucks',
-    name: 'Starbucks',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png',
-    correctColors: ['#00704A'],
-    options: ['#008248', '#00704A', '#FFFFFF', '#000000'],
+    id: 'facebook',
+    name: 'Facebook',
+    colorUrl: 'https://i.imgur.com/6X9M42p.png', // Direct PNG
+    correctColors: ['#1877F2'],
+    options: ['#1877F2', '#4267B2', '#898F9C', '#3b5998'],
   },
   {
-    id: 'ikea',
-    name: 'IKEA',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ikea_logo.svg/2560px-Ikea_logo.svg.png',
-    correctColors: ['#0051BA'],
-    options: ['#FFDA1A', '#0051BA', '#003399', '#FBC100'],
-  },
-  {
-    id: 'target',
-    name: 'Target',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Target_Corporation_logo_%28vector%29.svg/2048px-Target_Corporation_logo_%28vector%29.svg.png',
-    correctColors: ['#CC0000'],
-    options: ['#FFFFFF', '#CC0000', '#E50000', '#FF3333'],
-  },
-  {
-    id: 'walmart',
-    name: 'Walmart',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png',
-    correctColors: ['#0071CE'],
-    options: ['#FDBB30', '#0071CE', '#004C91', '#FFFFFF'],
-  },
-  {
-    id: 'fedex',
-    name: 'FedEx',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/FedEx_Express.svg/2560px-FedEx_Express.svg.png',
-    correctColors: ['#4D148C', '#FF6600'],
-    options: ['#4D148C', '#FF6600', '#000000', '#00A4EF'],
-  },
-  {
-    id: 'ups',
-    name: 'UPS',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/1200px-UPS_Logo_Shield_2017.svg.png',
-    correctColors: ['#351C15'],
-    options: ['#FFB500', '#351C15', '#000000', '#644117'],
-  },
-  {
-    id: 'coca-cola',
-    name: 'Coca-Cola',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png',
-    correctColors: ['#F40009'],
-    options: ['#FFFFFF', '#F40009', '#ED1C24', '#000000'],
-  },
-  {
-    id: 'pepsi',
-    name: 'Pepsi',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Pepsi_logo_2014.svg/2581px-Pepsi_logo_2014.svg.png',
-    correctColors: ['#004B93', '#C8102E'],
-    options: ['#004B93', '#C8102E', '#FFFFFF', '#000000'],
+    id: 'amazon',
+    name: 'Amazon',
+    colorUrl: 'https://i.imgur.com/kP12h3J.png', // Direct PNG
+    correctColors: ['#FF9900'],
+    options: ['#232F3E', '#000000', '#FF9900', '#146EB4'],
   },
   {
     id: 'tiktok',
     name: 'TikTok',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/2560px-TikTok_logo.svg.png',
-    correctColors: ['#00F2EA', '#FF0050'],
-    options: ['#00F2EA', '#FF0050', '#000000', '#FFFFFF'],
+    colorUrl: 'https://i.imgur.com/492rK1Y.png', // Direct PNG
+    correctColors: ['#000000', '#FE2C55', '#25F4EE'],
+    options: ['#FE2C55', '#25F4EE', '#000000', '#FFFFFF'],
   },
   {
     id: 'snapchat',
     name: 'Snapchat',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1200px-Snapchat_logo.svg.png',
+    colorUrl: 'https://i.imgur.com/f8z7DqK.png', // Direct PNG
     correctColors: ['#FFFC00'],
-    options: ['#000000', '#FFFC00', '#FFFFFF', '#FBBC05'],
+    options: ['#FFFC00', '#FFFFFF', '#000000', '#1DA1F2'],
   },
   {
     id: 'pinterest',
     name: 'Pinterest',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/768px-Pinterest-logo.png',
+    colorUrl: 'https://i.imgur.com/o2kL6Dk.png', // Direct PNG
     correctColors: ['#E60023'],
-    options: ['#BD081C', '#E60023', '#CC2127', '#FFFFFF'],
+    options: ['#E60023', '#000000', '#1877F2', '#FF0000'],
   },
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png',
+    colorUrl: 'https://i.imgur.com/eB302Yv.png', // Direct PNG
     correctColors: ['#0A66C2'],
-    options: ['#0077B5', '#0A66C2', '#FFFFFF', '#000000'],
+    options: ['#0A66C2', '#1DA1F2', '#4285F4', '#000000'],
   },
   {
     id: 'whatsapp',
     name: 'WhatsApp',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png',
+    colorUrl: 'https://i.imgur.com/40z2i5U.png', // Direct PNG
     correctColors: ['#25D366'],
-    options: ['#128C7E', '#25D366', '#075E54', '#DCF8C6'],
+    options: ['#25D366', '#128C7E', '#075E54', '#4FCE5D'],
   },
   {
-    id: 'telegram',
-    name: 'Telegram',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png',
-    correctColors: ['#2AABEE'],
-    options: ['#0088CC', '#2AABEE', '#FFFFFF', '#34A853'],
+    id: 'slack',
+    name: 'Slack',
+    colorUrl: 'https://i.imgur.com/N74N0P5.png', // Direct PNG
+    correctColors: ['#4A154B', '#36C5F0', '#ECB22E', '#E01E5A'],
+    options: ['#4A154B', '#36C5F0', '#ECB22E', '#E01E5A'],
+  },
+  {
+    id: 'figma',
+    name: 'Figma',
+    colorUrl: 'https://i.imgur.com/U8hE37u.png', // Direct PNG
+    correctColors: ['#F24E1E', '#A259FF', '#1ABCFE', '#0ACF83'],
+    options: ['#F24E1E', '#A259FF', '#1ABCFE', '#0ACF83', '#FF7262'],
+  },
+  {
+    id: 'adobe',
+    name: 'Adobe',
+    colorUrl: 'https://i.imgur.com/fL3xGjQ.png', // Direct PNG
+    correctColors: ['#FF0000'],
+    options: ['#FF0000', '#000000', '#FFFFFF', '#EB1000'],
+  },
+  {
+    id: 'airbnb',
+    name: 'Airbnb',
+    colorUrl: 'https://i.imgur.com/qL3qQ1k.png', // Direct PNG
+    correctColors: ['#FF5A5F'],
+    options: ['#FF5A5F', '#FC642D', '#00A699', '#484848'],
+  },
+  {
+    id: 'uber',
+    name: 'Uber',
+    colorUrl: 'https://i.imgur.com/x3R8y6A.png', // Direct PNG
+    correctColors: ['#000000'],
+    options: ['#000000', '#FFFFFF', '#1877F2', '#C0C0C0'],
+  },
+  {
+    id: 'mastercard',
+    name: 'Mastercard',
+    colorUrl: 'https://i.imgur.com/Y1718fQ.png', // Direct PNG
+    correctColors: ['#EB001B', '#F79E1B'],
+    options: ['#EB001B', '#F79E1B', '#00A2E5', '#FF5F00'],
   },
   {
     id: 'visa',
     name: 'Visa',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png',
+    colorUrl: 'https://i.imgur.com/rN5h00p.png', // Direct PNG
     correctColors: ['#1A1F71'],
-    options: ['#F79E1B', '#1A1F71', '#0057A0', '#00A4EF'],
+    options: ['#1A1F71', '#F79E1B', '#444444', '#0055A4'],
   },
   {
     id: 'paypal',
     name: 'PayPal',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png',
+    colorUrl: 'https://i.imgur.com/y1vK3vD.png', // Direct PNG
     correctColors: ['#003087', '#009CDE'],
-    options: ['#003087', '#009CDE', '#012169', '#005EA6'],
+    options: ['#003087', '#009CDE', '#005EA6', '#1877F2'],
+  },
+  {
+    id: 't-mobile',
+    name: 'T-Mobile',
+    colorUrl: 'https://i.imgur.com/j0qQ0y0.png', // Direct PNG
+    correctColors: ['#E20074'],
+    options: ['#E20074', '#FF00FF', '#FF69B4', '#C71585'],
+  },
+  {
+    id: 'fedex',
+    name: 'FedEx',
+    colorUrl: 'https://i.imgur.com/s6C3C3g.png', // Direct PNG
+    correctColors: ['#4D148C', '#FF6600'],
+    options: ['#4D148C', '#FF6600', '#00A4E4', '#00853F'],
+  },
+  {
+    id: 'ups',
+    name: 'UPS',
+    colorUrl: 'https://i.imgur.com/rJ4D3kQ.png', // Direct PNG
+    correctColors: ['#35211A'],
+    options: ['#35211A', '#FFB500', '#000000', '#A52A2A'],
   },
   {
     id: 'subway',
     name: 'Subway',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_logo.svg/2560px-Subway_logo.svg.png',
-    correctColors: ['#008C15', '#FFCB0A'],
-    options: ['#008C15', '#FFCB0A', '#FFFFFF', '#000000'],
+    colorUrl: 'https://i.imgur.com/lM5h1Jj.png', // Direct PNG
+    correctColors: ['#009743', '#FFCB0A'],
+    options: ['#009743', '#FFCB0A', '#FFFFFF', '#000000'],
   },
   {
-    id: 'burger-king',
-    name: 'Burger King',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Burger_King_logo_%281999%29.svg/2024px-Burger_King_logo_%281999%29.svg.png',
-    correctColors: ['#ED7800', '#00387B'],
-    options: ['#ED7800', '#00387B', '#DA291C', '#FFC72C'],
+    id: 'twitch',
+    name: 'Twitch',
+    colorUrl: 'https://i.imgur.com/i4C4Y0H.png', // Direct PNG
+    correctColors: ['#9146FF'],
+    options: ['#9146FF', '#6441A5', '#F0F0F0', '#000000'],
   },
   {
-    id: 'dunkin',
-    name: "Dunkin'",
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Dunkin%27_Donuts_logo.svg/1200px-Dunkin%27_Donuts_logo.svg.png',
-    correctColors: ['#F05E8A', '#F2853C'],
-    options: ['#F05E8A', '#F2853C', '#FFFFFF', '#663399'],
+    id: 'reddit',
+    name: 'Reddit',
+    colorUrl: 'https://i.imgur.com/c6c6K3k.png', // Direct PNG
+    correctColors: ['#FF4500'],
+    options: ['#FF4500', '#FFFFFF', '#5F99CF', '#CEE3F8'],
   },
   {
-    id: 'taco-bell',
-    name: 'Taco Bell',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/Taco_Bell_logo.svg/1200px-Taco_Bell_logo.svg.png',
-    correctColors: ['#702082'],
-    options: ['#FFBD00', '#702082', '#00A6DE', '#ED7000'],
+    id: 'starbucks',
+    name: 'Starbucks',
+    colorUrl: 'https://i.imgur.com/M5E1X3Y.png', // Direct PNG
+    correctColors: ['#00704A'],
+    options: ['#00704A', '#FFFFFF', '#000000', '#3CB371'],
+  },
+  {
+    id: 'ikea',
+    name: 'IKEA',
+    colorUrl: 'https://i.imgur.com/2Y4K44R.png', // Direct PNG
+    correctColors: ['#0051BA', '#FFDA1A'],
+    options: ['#0051BA', '#FFDA1A', '#FFFFFF', '#000000'],
+  },
+  {
+    id: 'target',
+    name: 'Target',
+    colorUrl: 'https://i.imgur.com/x1Y2H2o.png', // Direct PNG
+    correctColors: ['#CC0000'],
+    options: ['#CC0000', '#FFFFFF', '#FF0000', '#990000'],
+  },
+  {
+    id: 'walmart',
+    name: 'Walmart',
+    colorUrl: 'https://i.imgur.com/5J3J6yV.png', // Direct PNG
+    correctColors: ['#0071CE', '#FFC220'],
+    options: ['#0071CE', '#FFC220', '#FFFFFF', '#475C66'],
+  },
+  {
+    id: 'coca-cola',
+    name: 'Coca-Cola',
+    colorUrl: 'https://i.imgur.com/V2v0U3U.png', // Direct PNG
+    correctColors: ['#F40009'],
+    options: ['#F40009', '#FFFFFF', '#000000', '#E50914'],
+  },
+  {
+    id: 'microsoft',
+    name: 'Microsoft',
+    colorUrl: 'https://i.imgur.com/x9xX9xZ.png', // Direct PNG
+    correctColors: ['#F25022', '#7FBA00', '#00A4EF', '#FFB900'],
+    options: ['#F25022', '#7FBA00', '#00A4EF', '#FFB900'],
+  },
+  {
+    id: 'apple',
+    name: 'Apple',
+    colorUrl: 'https://i.imgur.com/J8Y8Y8Y.png', // Direct PNG
+    correctColors: ['#A3AAAE'],
+    options: ['#A3AAAE', '#FFFFFF', '#000000', '#C0C0C0'],
+  },
+  {
+    id: 'soundcloud',
+    name: 'SoundCloud',
+    colorUrl: 'https://i.imgur.com/S7F7F7F.png', // Direct PNG
+    correctColors: ['#FF5500'],
+    options: ['#FF5500', '#FFFFFF', '#000000', '#FF8800'],
+  },
+  {
+    id: 'dropbox',
+    name: 'Dropbox',
+    colorUrl: 'https://i.imgur.com/D4J4J4J.png', // Direct PNG
+    correctColors: ['#0061FF'],
+    options: ['#0061FF', '#FFFFFF', '#636363', '#4285F4'],
   },
   {
     id: 'intel',
     name: 'Intel',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Intel-logo.svg/1280px-Intel-logo.svg.png',
+    colorUrl: 'https://i.imgur.com/I2N2N2N.png', // Direct PNG
     correctColors: ['#0071C5'],
-    options: ['#0071C5', '#003C71', '#FFFFFF', '#000000'],
-  },
-  {
-    id: 'ibm',
-    name: 'IBM',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png',
-    correctColors: ['#0530AD'],
-    options: ['#006699', '#0530AD', '#000000', '#FFFFFF'],
-  },
-  {
-    id: 'hp',
-    name: 'HP',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/2048px-HP_logo_2012.svg.png',
-    correctColors: ['#0096D6'],
-    options: ['#0096D6', '#000000', '#FFFFFF', '#007DB8'],
-  },
-  {
-    id: 'dell',
-    name: 'Dell',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/2133px-Dell_Logo.svg.png',
-    correctColors: ['#007DB8'],
-    options: ['#0085C3', '#007DB8', '#FFFFFF', '#333333'],
+    options: ['#0071C5', '#000000', '#FFFFFF', '#003F6E'],
   },
   {
     id: 'nvidia',
     name: 'Nvidia',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Nvidia_logo.svg/220px-Nvidia_logo.svg.png',
+    colorUrl: 'https://i.imgur.com/N6V6V6V.png', // Direct PNG
     correctColors: ['#76B900'],
-    options: ['#76B900', '#000000', '#FFFFFF', '#8BC53F'],
+    options: ['#76B900', '#000000', '#FFFFFF', '#8BC34A'],
   },
   {
-    id: 'amd',
-    name: 'AMD',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/2560px-AMD_Logo.svg.png',
-    correctColors: ['#ED1C24'],
-    options: ['#000000', '#ED1C24', '#FFFFFF', '#FF0000'],
+    id: 'burger-king',
+    name: 'Burger King',
+    colorUrl: 'https://i.imgur.com/B9K9K9K.png', // Direct PNG
+    correctColors: ['#D62300', '#2B6295', '#FF9A00'],
+    options: ['#D62300', '#FF9A00', '#2B6295', '#F5EBDD'],
+  },
+  {
+    id: 'tidal',
+    name: 'Tidal',
+    colorUrl: 'https://i.imgur.com/T0D0D0D.png', // Direct PNG
+    correctColors: ['#00FFFF'],
+    options: ['#00FFFF', '#000000', '#FFFFFF', '#1ED760'],
   },
 ];
