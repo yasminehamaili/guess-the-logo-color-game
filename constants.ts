@@ -25,7 +25,7 @@ export const LOGO_DATA: LogoData[] = [
   {
     id: 'discord',
     name: 'Discord',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Discord_Blurple_logo.svg/512px-Discord_Blurple_logo.svg.png',
+    colorUrl: 'https://static.vecteezy.com/system/resources/previews/018/930/500/non_2x/discord-logo-discord-icon-transparent-free-png.png',
     correctColors: ['#5865F2'],
     options: ['#5865F2', '#7289DA', '#23272A', '#FFFFFF'],
   },
