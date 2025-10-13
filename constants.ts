@@ -74,7 +74,7 @@ export const LOGO_DATA: LogoData[] = [
   {
     id: 'tiktok',
     name: 'TikTok',
-    colorUrl: 'https://upload.wikimedia.org/wikipedia/en/0/0a/TikTok_logo.svg',
+    colorUrl: 'https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338432_1280.png',
     correctColors: ['#000000', '#FE2C55', '#25F4EE'],
     options: ['#FE2C55', '#25F4EE', '#000000', '#FFFFFF'],
   },
