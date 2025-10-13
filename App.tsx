@@ -19,12 +19,9 @@ const App: React.FC = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
 
-  useEffect(() => {
-    setQuestions(shuffleArray(LOGO_DATA));
-  }, []);
-
   const handleStartGame = useCallback(() => {
-    setQuestions(shuffleArray(LOGO_DATA));
+    const shuffledQuestions = shuffleArray(LOGO_DATA);
+    setQuestions(shuffledQuestions.slice(0, 10));
     setCurrentQuestionIndex(0);
     setScore(0);
     setGameState(GameState.Playing);
