@@ -1,8 +1,9 @@
+
 export interface LogoData {
   id: string;
   name: string;
   colorUrl: string;
-  correctColor: string[];
+  correctColors: string[];
   options: string[];
 }
 
