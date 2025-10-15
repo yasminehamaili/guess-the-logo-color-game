@@ -57,7 +57,7 @@ const ResultSection: React.FC<ResultSectionProps> = ({ score, totalQuestions, on
         </div>
       </div>
       <p className="mt-8 text-sm text-gray-500">
-        Created by the AI Design Department – Welcome Day 2025
+        BY Design Department –FTC Welcome Day 2025
       </p>
     </div>
   );
